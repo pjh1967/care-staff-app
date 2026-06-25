@@ -2,7 +2,7 @@
 //  요양보호사 근무 요청 앱 (직원용)
 //  care-schedule-staff-app / src/App.js 로 사용
 // ============================================================
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 // ── Google API 설정 (관리자 앱과 동일하게 입력) ─────────────
 const GAPI_CONFIG = {
@@ -126,8 +126,6 @@ const Sheets = {
   async saveRequests(name,role,requests,year,month){
     // 전체 데이터 읽기
     const rows=await this.read(`${SHEET_REQUEST}!A1:G200`);
-    const lastRow=Math.max(rows.length,4);
-
     // 기존 해당 직원 행 제거
     const others=rows.filter((r,i)=>i<4||String(r[0]).trim()!==name);
 
