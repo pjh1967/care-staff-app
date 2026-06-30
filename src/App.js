@@ -6,7 +6,7 @@ import { useState } from "react";
 
 // ── Google API 설정 (관리자 앱과 동일하게 입력) ─────────────
 const GAPI_CONFIG = {
-  CLIENT_ID    : "575088677348-i8s653ni326sj9e7jpl6ikjrgbbrdfup.apps.googleusercontent.com",
+  CLIENT_ID    : "575088677348-r8aac6jucrst7346iprqag42t7vaic56.apps.googleusercontent.com",
   API_KEY      : "AIzaSyA17IdNlmepK2eK3riUzqH489BVJ-uGyww",
   SPREADSHEET_ID: "1xp3IJmB1jyrVY0DrDYdx2MXh4Xo68uRCTQkmh_xufhw",
   SCOPES       : "https://www.googleapis.com/auth/spreadsheets",
